@@ -1,0 +1,148 @@
+java --version
+mvn --version [Maven Check]
+https://maven.apache.org/download.cgi
+
+				     Java API
+				        |
+		-------------------------------------------------
+	       |			|		         |
+	Java SE API		    Java EE API 	    Java ME API
+    Java Standard Edition	Java Enterprise Edition	 Java Micro Edition
+    [Core Java]			[Advanced Java]		 [Mobile Java]
+    |_Console based apps	|_ Web application	 |_ Chip_level apps.
+    |_Window based apps[applet,awt,swing]
+    |_packages [folder system]		
+      |_java.lang
+      | |_System.java / System.class
+      | |_String.java / String.class
+      |_java.io
+      |_java.util
+      |_java.time
+      |_java.sql
+      |_java.net  
+      |_java.applet
+      |_java.awt
+      |_java.awt.event
+      |_javax.swing
+
+FileName.java
+|_ Java classes [Ex. Integer]
+|_ Java Abstract classes [Ex. Number]
+|_ Java Interfaces [
+|_ Java Enums
+|_ Java Exception classes
+|_ Java Error classes
+|_ Java Annotation classes
+|_ Java record classes
+
+
+md - make directory
+cd - change directory
+dir - list of directory
+
+fiit.deepa.day1
+|__Welcome.java 
+|__Helloworld.java
+|__Student.java
+|__StudentMain.java
+|__Calculator.java
+|__CalculatorMain.java
+fiit.deepa.day2
+|__Welcome.java 
+|__Helloworld.java
+|__Student.java
+|__StudentMain.java
+|__Calculator.java
+|__CalculatorMain.java
+
+Design Pattern
+--------------
+Java creational pattern [class pattern]
+----------------------- 
+
+keywords - It is reserved identifier 
+---------------------------------------------------------------------
+if	break		class		boolean	float	public	  new			
+else	continue	interface	byte	double	private
+for	true		enum		short	char	protected
+while	false		abstract	int	final	default
+do	void		record		long	finally	static
+
+syntax
+------
+
+class <ClassName> {
+  ---
+  --- statements;
+  ---
+}
+
+class <ClassName> {
+  declared variables;
+  derived methods;
+}
+
+declared variables
+|__Types
+|  |__primitive variables
+|  |  |__[boolean, byte, short, int, long, float, double, char]
+|  |  |  |__ <data-type> variable-name <= <initialized-value>>;
+|  |  |  |   |__ int studentId = 1201; boolean flag = true; long phoneNo;
+|  |  |  |   |__ float pfRate; double avgMarks = 85.6;
+|  |__reference variables
+|  |  |__[Except the primitive keywords if we write/apply any data-type]
+|  |  |  |__ String firstName; String designation; Employee emp; Users user;
+|  |  |  |__ String lastName = "Madan";
+|__Scope
+|  |__Instance scope
+|  |__Local scope
+
+
+boolean		1bit		false/true				false
+byte		8bits	1byte   -2^7 to +2^7 - 1 [-128 to 127] 		0
+short		16bits	2bytes	-2^15 to 2^15 -1 [-32768 to 32767]	0
+int		32bits	4bytes  -2^31 to 2^31 -1 [			0
+long		64bits	8bytes	-2^63 to 2^63 -1			0L
+float		32bits	4bytes  -2^31 to 2^31 -1 [			0.0F
+double		64bits	8bytes  -2^63 to 2^63 -1			0.0D
+char		16bits	2bytes   0 to 2^16 - 1				'\u0000'
+
+0-7
+0-15
+0-31
+0-63
+
+class Employee {
+  int empId;
+  String empName;
+  long basicSalary;
+  short age;
+  double netSalary; 
+}
+
+derived methods [Actual business logic / what action performed in this class]
+---------------
+syntax:
+-------
+<return-type> method-name(<parameter-list>) { [default return-type as void]
+  ----
+  ---- [business logic/statement
+  ----
+}
+
+<return-type> - primitive or reference or void[no-return value] data type
+method-name - printNames() / printData() /
+<parameter-list> - primitive or reference variables
+{ ... } - concrete method
+
+Example:
+--------
+	void displayEmpDetails() {
+          System.out.println("Employee ID: "+empId);
+          System.out.println("Employee Name: "+empName);
+        }
+
+FIIT.deepa.day1.Employee.java / Employee.class / class_notes.txt
+FIIT.deepa.day2
+    
+

@@ -1,0 +1,57 @@
+Java SE/EE/ME API 
+-----------------
+FileName.java
+|__class files / abstract class files
+|__interfaces
+|__enum
+|__exception files / error files
+|__annotation files
+|__records files
+
+Keywords - class / interface / abstract / enum / record / 
+	   public / private / protected / default / static
+           boolean / byte / short / int / long / float / double / char
+
+Build the Java application - class files [ class files - 70-80%]
+
+class ClassName {
+  variable declation; - primitive / reference
+  method definition;
+}
+
+class Box {
+ int a = 100;	
+ long b = a;		// Implicit casting
+ double d = 12.67d;	// 64 bits
+ float f = (float)d;	// 32 bits - compilation error - apply explicit
+ double d1 = f;		// 
+ long l1 = (long)f;	// compilation error - expect for explicit
+}
+
+Types of operator:
+1. unary   perform only one operand int a=-5; a++; ++a; a--; --a; int b = -a; //5
+2. binary  perform two operands int a, b; a+b; a-b; a>b; a==b; a!=b; a&&b; a&b; a>>b;
+3. Ternary perform three operands 
+int a=15, b=100;
+int big = (a>b)?a:b; 
+
+A	B	A&&B	A||B	!A	!B
+0	0	0	0	1	1
+1	0	0	1	0	1
+0	1	0	1	1	0
+1	1	1	1	0	0
+
+int a = 14;	// 0000 1110
+int b = 12;	// 0000 1100
+
+result = a&b;	// 0000 1100 --> 12
+result = a|b;	// 0000 1110 --> 14
+result = a^b;	// 0000 0010 --> 2
+result = ~a;	// 
+
+a=b;
+a=a+b;	// a+=b;
+a=a-b;	// a-=b;
+
+
+Primitive Casting [

@@ -1,0 +1,48 @@
+Day-2
+------
+
+class Abc {
+---
+---
+}
+
+class AbcMain {
+ public static void main(String[] args) {
+  Abc abc = null; 		// reference variable // Object declaration
+  abc = new Abc();  		// object intialization
+ }
+}
+
+
+class Employee{}
+class Student{}
+class Calculator{}
+
+Employee employee = new Employee();
+Student student = new Student();
+Calculator calc = new Calculator();
+
+new - allocate memory for particular class
+ClassName() - constructor method
+
+Life cycle
+-----------
+
+FirstProgram.java [source code]
+|  javac FirstProgram.java - Java compilation process
+FirstProgram.class [byte code]
+|  java FirstProgram - Java Interpretor
+|_____________________________________________
+|Java           classLoader         Java      | To check whether it contains main()
+|Memory                             API       |
+|Mgt                                classes   | Memory Management - Heap / Stack
+|              Execute Engine                 |
+|             Java JIT compiler               | convert bytecode into machine code
+|________________________________________JVM__|
+|
+OS [windows/mac/linux]
+|
+Output device [console/web/network/database]
+
+
+

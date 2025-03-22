@@ -1,0 +1,64 @@
+value object - vo
+or 
+transfer object - to
+
+class Employee {
+  private int empId;
+  private String empName;
+  private String empDesignation;
+
+
+Data hiding - it is half definition complete the encapsulation
+
+Accessor & Mutator method representation
+[getter & setter definition]
+
+empId -> get+variable-name
+      -> get+empId
+      -> getEmpId() | setEmpId()
+empName -> getEmpName() | setEmpName()
+empDesignation -> getEmpDesignation() | setEmpDesignation()
+
+getter method to share the data outside the class, how? it should be define public access specifier. e.g.
+
+public int getEmpId() {
+  return empId;
+}
+
+setter method to set/assign the value to the instance variable.
+public void setEmpId(int empId){
+  this.empId = empId;
+}
+
+Java comments
+--------------
+1. single-line	//
+2. multi-line	/* 
+		* line-1
+		* line-2
+		* line-3
+		*/
+3. java-docs 	/** 
+		* @since 
+  		* @author
+		* @params
+		* @deprecated
+		* @see
+		* @version
+		* 	
+		*/
+obj1
+a=5
+b=8
+display()
+|__ 11
+|__ 9
+display()
+|__ 17
+|__ 10
+
+a value is 11 and b value is 9
+a value is 17 and b value is 10
+
+obj2
+a=5, b=8

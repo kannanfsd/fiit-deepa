@@ -1,0 +1,42 @@
+Java SE API - Day 7
+-------------------
+keywords - boolean, byte, short, int, long, float, double, char 
+	 - public, private, protected, default
+	 - static, final
+	 - void, finally, volatile, transient, true, false
+	 - class, abstract, interface, enum, record
+         - if, else, do, while, for
+packages - oracle - java documenatation
+		   |__ java.lang.FileName.java | System.java | String.java
+  		   |__ java.io | InputStream.java | PrintStream.java
+		   |__ java.util. | Scanner.java | Date.java
+			|__ class|abstract class|interface|exception|error|enum|annotation|record |-> FileName.java
+
+class pattern - 70-80%
+
+class <ClassName> {
+  variable/field declaration; |Types|scope|modifiers
+  method derivation;	|Action|business-logic
+  |__ user-defined method
+  |__ pre-defined method
+}
+
+class Box{	//executable class 
+ int a;
+ String name;
+ void display() {
+   String msg = "Hi, welcome to java";
+   System.out.println(msg+" "+a+" "+name);
+ }
+ public static void main(String[] args) {
+   Box b = new Box();
+   b.a = 10;
+   b.name = "Ram";
+   b.display()
+ }
+}
+
+Access Specifier
+----------------
+
+

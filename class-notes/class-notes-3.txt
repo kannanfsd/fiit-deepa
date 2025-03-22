@@ -1,0 +1,115 @@
+Day-3
+-----
+
+int for;
+float if;
+double true;
+String name;
+
+void super() {}		//Java inheritance
+void instanceof() {}	//Java compilation error
+
+class ClassName {		concreate env. 
+  declared variable;	//primitive / Reference type / state[data]
+  derived methods;	// behavior[business logic]
+}
+
+primitive data-type 	Reference data-type
+
+boolean status;		String name;		//java.lang
+byte			System out;		//java.lang
+short			Scanner scan;		//java.util
+int 			Employee employee;	//user-defined class	
+long 			Student student;		
+float			Calculator calc;
+double			PrintWriter pw;		//java.io
+char			LocalDateTime ldt;	//java.time
+
+class A {
+ public int a;
+ private float b;
+ String name;	//instance variables 
+ void methodA(){
+   int x;
+   float y;
+   String location; //local variables
+ }
+ void methodA2(){
+
+ }
+ void methodA3(){}
+}
+//depends on the access modifier can call the other classes
+// [public, private, protected, default]
+class B{
+ A.a;
+ A.b;	// compilation error
+}
+
+
+String name = "Hello";			//
+String name = new String("Hello");	//Allocate the memory
+Scanner scan = new Scanner(System.in);	//
+Employee emp = new Employee();
+Student 
+Calculator calc = new Calculator();
+
+Integer Liters
+--------------
+binary	- base2	 - 0,1  - 111
+Decimal - base10 - 0-9	- 15625
+octal	- base8  - 0-7  - 196->304
+Hexadecimal - base16 - 0-9A-F | A-10|B-11|C-12|D-13|E-14|F-15
+
+8|196
+ ----
+ |24-4
+ ---- 
+  3-0
+(23) - 19
+
+(304) - (196)
+
+12 - C
+87 - 
+
+16|87
+  ----
+   5-7
+
+57 - 87
+
+
+int a = 12;	//base10
+int a = 014;	//base8
+int a = 0xC;
+int a = 0XC;    //base16
+int a = 0b1100 | 0B1100;	//base2
+
+014
+|||__ 4x8^0 = 4
+||___ 1x8^1 = 8
+|____ 0x8^2 = 0
+             ----
+            2| 12
+              ---- 
+             | 6-0
+              ----
+               3-0
+              ----
+               1-1  
+1100
+
+int a = 100;	//source
+long b = a;	//destination - passed
+int c = (int)b;	//passed //explicit casting
+
+char 16
+byte 8
+short 16
+int 32
+long 64 
+
+float 32
+double 64 
+

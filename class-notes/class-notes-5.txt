@@ -1,0 +1,51 @@
+Java SE API
+-----------
+https://docs.oracle.com/javase/8/docs/api/
+
+packages
+|_java.lang
+| |_Files [FileName.java] - [class[70-80%], abstract class[5-10%], interface[10-20%], enum[1-2%], exception[1-2%], errors[1-2%], annotations[5-10%], record[1-2%]]
+| | |_Boolean.java [class summary]
+|_java.util
+|_java.io
+
+class ClassName {
+ variable declaration; // field summary
+ method definition;    // method summary
+}
+
+class Boolean { 
+}
+
+keywords - assert | abstract | class 
+	   public | private | protected | default
+
+Access Modifier 
+---------------
+
+Maven
+-----
+It allows to build java applications based on pom.xml 
+[project object model]
+Java Testing [unit testing, integration testing]
+
+controller->service->repository->database
+         |_dao	     |_dto	
+
+Repository
+|
+Local 				Central				Remote
+C:\users\<user-name>\.m2	https://mvnrepository.com
+
+java17 - junit 
+JUnit is a unit testing framework to write and run repeatable automated tests on Java.
+
+
+
+
+
+
+
+
+
+
