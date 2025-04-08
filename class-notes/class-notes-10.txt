@@ -1,0 +1,227 @@
+value object - vo
+or 
+transfer object - to
+
+class Employee {
+  private int empId;
+  private String empName;
+  private String empDesignation;
+
+
+Data hiding - it is half definition complete the encapsulation
+
+Accessor & Mutator method representation
+[getter & setter definition]
+
+empId -> get+variable-name
+      -> get+empId
+      -> getEmpId() | setEmpId()
+empName -> getEmpName() | setEmpName()
+empDesignation -> getEmpDesignation() | setEmpDesignation()
+
+getter method to share the data outside the class, how? it should be define public access specifier. e.g.
+
+public int getEmpId() {
+  return empId;
+}
+
+setter method to set/assign the value to the instance variable.
+public void setEmpId(int empId){
+  this.empId = empId;
+}
+
+Java comments
+--------------
+1. single-line	//
+2. multi-line	/* 
+		* line-1
+		* line-2
+		* line-3
+		*/
+3. java-docs 	/** 
+		* @since 
+  		* @author
+		* @params
+		* @deprecated
+		* @see
+		* @version
+		* 	
+		*/
+obj1
+a=5
+b=8
+display()
+|__ 11
+|__ 9
+display()
+|__ 17
+|__ 10
+
+a value is 11 and b value is 9
+a value is 17 and b value is 10
+
+obj2
+a=5, b=8
+
+Constructor
+------------
+class A{
+ int a;
+ int b;
+ A() { System.out.println("default-constructor"); }
+ void m1() {}		//concrete method 
+ void m2(int a){}
+ int m3(){ return 0; }
+}
+
+A obj = new A();	//object created /memory allocation is done
+obj.m1();
+obj.m2(5);
+int result = obj.m3();
+
+class A {
+  int a;
+  int b;
+  public A() { }		//default-constructor method
+  private A(int a){}		//no-return value including void
+}
+
+A obj1 = new A();    // object creation time -> invoke the constructor method
+A obj2 = new A(15)
+
+class B {
+ B() {}
+ B(int a) {}
+ B(int a, int b){}
+ B(String name){}
+}
+
+this keyword  - refer to current class instance member
+this() method
+
+java.util
+|__Scanner API
+
+class Scanner{
+  //it allows to get input data from user 
+  boolean nextBoolean()
+  byte nextByte()
+  short nextShort()
+  int nextInt()
+  long nextLong()
+  float nextFlot()
+  double nextDouble()
+ X char
+  String next()			Deepa 
+  String nextLine()  		Deepa Karunagaran
+}
+Scanner scan = new Scanner(System.in);
+
+java.io
+|
+InputStream.java
+
+InputStream is = new InputStream()
+
+java.lang
+|__String API
+
+Name: "Karthick"
+Age: "17"
+Gender: "M"
+isAlive: "true"
+
+Wrapper Classes [to convert data from String to primitive and vice versa]
+|__java.lang
+   |__Boolean		boolean
+   |__Number
+      |__Byte		byte
+      |__Short		short
+      |__Integer	int(32bits)0
+      |__Long		long
+      |__Float		float
+      |__Double		double
+   |__Character		char
+
+Integer.java
+|
+class Integer {
+  variables;	//primitive/reference
+  methods; 	//static/non-static/constructor
+  static int parseInt(String value);  
+}
+
+int a = Integer.parseInt(scan.nextLine())
+float f = Float.parseFloat(scan.nextLine())
+
+Inheritance [code reusability]
+----------- 
+
+class A {
+  private int a;
+  void m1() {}
+  public void setA(int a) {
+   this.a = a;
+  }
+  public int getA() {
+   return a;
+  }
+}
+class B extends A{}
+class C extends B{}
+
+A obj = new A();
+B obj = new B();
+
+abstract class Ab {
+ abstract void m1();
+}
+
+java.lang
+|__Object.java -> It is a mother class 
+
+class Object {
+  variables;
+  methods;
+}
+
+1. single
+Object
+|
+Number
+|
+Byte
+
+2. multi-level
+Object.java
+|
+A.java
+|
+B.java
+|
+C.java
+|
+D.java
+
+super - keyword 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
